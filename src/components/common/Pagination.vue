@@ -3,7 +3,7 @@
     <el-pagination
       @size-change="handleSizeChange"
       @current-change="handleCurrentChange"
-      :current-page="page.start"
+      :current-page="page.start"  
       :page-sizes="[10, 20, 30, 40]"
       :page-size="page.limit"
       layout="total, sizes, prev, pager, next, jumper"
@@ -24,10 +24,12 @@ export default {
         }
     },
     methods:{
-        handleSizeChange(){
+        handleSizeChange(v){
+            this.page.size = v;
             this.$emit('page-change')
         },
-        handleCurrentChange(){
+        handleCurrentChange(v){
+            this.page.start = v;
             this.$emit('page-change')
         }
     }

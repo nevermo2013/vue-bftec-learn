@@ -75,7 +75,7 @@ export default {
       this.getStudentList(form);
     },
     /**
-     * searchForm={} es6 预定义参数
+     * searchForm={} es6 预定义参数  function foo(a=2){a}  foo()
      */
     getStudentList(searchForm = {}) {
       this.loading = true
@@ -103,7 +103,9 @@ export default {
         this.dialog = true;
         this.$refs.studentDetail.getStudentInfo(id)
     },
-    handlePageChange() {},
+    handlePageChange() {
+      this.getStudentList()
+    },
     /**
      * 初始化基本信息
      */
