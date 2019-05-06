@@ -14,11 +14,12 @@ module.exports = {
     devServer: {
         proxy: {
             '^/api':{
-                target:'http://localhost',
+                // target:'http://localhost',
+                target:'http://59.110.138.169',
                 changeOrigin:true
             },
             '^/admin':{
-                target:'http://localhost',
+                target:'http://59.110.138.169',
                 changeOrigin:true
             },
             '/ms':{
