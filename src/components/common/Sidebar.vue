@@ -51,6 +51,10 @@
                             {
                                 index: 'student',
                                 title: '学生管理'
+                            },
+                            {
+                                index: 'news',
+                                title: '新闻管理'
                             }
                         ]
                     },

@@ -13,8 +13,9 @@ module.exports = {
       },
     devServer: {
         proxy: {
+            // 以 /api 开头的url请求 都会被拦截 替换为: target/api
             '^/api':{
-                // target:'http://localhost',
+                // target:'http://59.110.138.169',
                 target:'http://59.110.138.169',
                 changeOrigin:true
             },

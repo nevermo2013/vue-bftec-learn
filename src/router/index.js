@@ -27,6 +27,11 @@ export default new Router({
                     meta: { title: '学员管理' }
                 },
                 {
+                    path: '/news',
+                    component: ()=>import('@/view/xy/news/News.vue'),
+                    meta: { title: '新闻管理' }
+                },
+                {
                     path: '/icon',
                     component: resolve => require(['../components/page/Icon.vue'], resolve),
                     meta: { title: '自定义图标' }

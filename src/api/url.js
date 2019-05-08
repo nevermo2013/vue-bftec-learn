@@ -1,4 +1,4 @@
 export default{
-    upload:`/api/admin/material/uploadImg`,
-    codeImg:`/admin/login/imgCode`
+    upload:`http://59.110.138.169/`,
+    codeImg:`/admin/login/imgCode`,
 }

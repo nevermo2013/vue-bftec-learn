@@ -37,10 +37,11 @@ function delStudent(data){
   })
 }
 
+
 export default {
   getStudentList,
   getStudentById,
   saveStudent,
   updateStudent,
-  delStudent
+  delStudent,
 }
